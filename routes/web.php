@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProductManageController;
+use App\Http\Controllers\ExamManageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +18,7 @@ use App\Http\Controllers\ProductManageController;
 //     return view('welcome');
 // });
 
-Route::get('/', [ProductManageController::class, 'index'])->name('home');
-Route::post('add-update-book', [ProductManageController::class, 'store']);
-Route::post('edit-book', [ProductManageController::class, 'edit']);
-Route::post('delete-book', [ProductManageController::class, 'destroy']);
+Route::get('/', [ExamManageController::class, 'index'])->name('home');
+Route::post('add-update-question', [ExamManageController::class, 'store']);
+Route::post('edit-question', [ExamManageController::class, 'edit']);
+Route::post('delete-question', [ExamManageController::class, 'destroy']);
